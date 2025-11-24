@@ -1,0 +1,63 @@
+.main-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 5%;
+  background: rgba(5, 10, 25, 0.92);
+  backdrop-filter: blur(18px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.logo {
+  width: 42px;
+  height: 42px;
+}
+
+.brand-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.brand-subtitle {
+  font-size: 0.8rem;
+  color: #9da9c6;
+}
+
+.header-nav {
+  display: flex;
+  gap: 1.8rem;
+  font-size: 0.95rem;
+}
+
+.header-nav a {
+  color: #dfe7ff;
+  text-decoration: none;
+  font-weight: 500;
+  position: relative;
+}
+
+.header-nav a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -0.25rem;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #4ade80, #22d3ee);
+  transition: width 0.2s ease-out;
+}
+
+.header-nav a:hover::after {
+  width: 100%;
+}

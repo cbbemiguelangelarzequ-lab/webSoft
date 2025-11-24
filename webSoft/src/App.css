@@ -1,0 +1,7 @@
+.app-root {
+  color: #e5e7eb;
+  background: #020617;
+}
+main {
+  margin-top: 64px; /* compensar el header fijo */
+}
